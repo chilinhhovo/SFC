@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scottish Fiscal Commission - Design System Showcase</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            padding: 30px 0 20px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 300;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            font-weight: 300;
+        }
+
+        .section {
+            padding: 40px 0;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .section:last-child {
+            border-bottom: none;
+        }
+
+        .section-header {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 5px;
+            color: #2c3e50;
+        }
+
+        .section-description {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+            max-width: 600px;
+            margin: 0;
+            line-height: 1.8;
+        }
+
+        .grid {
+            display: grid;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .grid-2 {
+            grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        }
+
+        .grid-3 {
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+        }
+
+        .work-item {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #eee;
+        }
+
+        .work-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .work-item-content {
+            padding: 15px;
+        }
+
+        .work-item-title {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .work-item-description {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .highlight-section {
+            background: #fff;
+            color: #333;
+        }
+
+        .highlight-section .section-title,
+        .highlight-section .section-description {
+            color: #333;
+        }
+
+        .highlight-section .work-item {
+            background: #fff;
+        }
+
+        .external-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .external-link:hover {
+            background: #2980b9;
+        }
+
+        .timeline {
+            text-align: left;
+            margin-top: 5px;
+        }
+
+        .timeline-badge {
+            display: inline-block;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            font-weight: 400;
+            font-style: italic;
+        }
+
+        .impact-note {
+            background: #f8f9fa;
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-top: 10px;
+            border-left: 3px solid #27ae60;
+            font-size: 0.9rem;
+        }
+
+        .impact-note strong {
+            color: #27ae60;
+        }
+
+        footer {
+            padding: 20px 0;
+            text-align: left;
+            background: #fff;
+            color: #7f8c8d;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+            
+            .grid-3 {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .section {
+                padding: 30px 0;
+            }
+            
+            header {
+                padding: 20px 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Scottish Fiscal Commission</h1>
+            <p class="subtitle">Design System & Infographics Showcase</p>
+        </div>
+    </header>
+
+    <!-- Web Redesign 2022 Section -->
+    <section class="section highlight-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Web Accessibility Redesign</h2>
+                <div class="timeline">
+                    <span class="timeline-badge">Delivered 2022</span>
+                </div>
+            </div>
+            
+            <div class="work-item">
+                <img src="web2022.jpg" alt="2022 Web Redesign">
+                <div class="work-item-content">
+                    <a href="https://fiscalcommission.scot/publications/scotlands-economic-and-fiscal-forecasts-may-2022/" 
+                       class="external-link" target="_blank">View 2022 Publication →</a>
+                    <a href="https://fiscalcommission.scot/publications/scotlands-economic-and-fiscal-forecasts-may-2025/" 
+                       class="external-link" target="_blank" style="margin-left: 15px;">View 2025 Publication →</a>
+                    <div class="impact-note">
+                        <strong>Revamped website and launched infographics summary designsystem</strong> - Still used in all publications today and at every publication launch webpage. 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographics System Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Summary Infographics System</h2>
+                <div class="timeline">
+                    <span class="timeline-badge">Created 2022</span>
+                </div>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="work-item">
+                    <img src="infogrpahics1.jpg" alt="Economic Forecasts Infographic">
+                </div>
+                
+                <div class="work-item">
+                    <img src="infogrpahics2.jpg" alt="Fiscal Overview Infographic">
+                </div>
+                
+                <div class="work-item">
+                    <img src="infogrpahics3.jpg" alt="Tax Analysis Infographic">
+                </div>
+                
+                <div class="work-item">
+                    <img src="infogrpahics4.jpg" alt="Social Security Infographic">
+                </div>
+                
+                <div class="work-item">
+                    <img src="infogrpahics5.jpg" alt="Key Metrics Infographic">
+                </div>
+                
+                <div class="work-item">
+                    <img src="infogrpahics6.jpg" alt="Forecast Summary Infographic">
+                </div>
+            </div>
+            
+
+            
+            <div class="impact-note" style="margin-top: 15px;">
+                <strong>System still in use</strong> - Latest 2025 forecasts use the same infographic format
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Templates Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Social Media Design System</h2>
+                <div class="timeline">
+                    <span class="timeline-badge">Built 2021-2022</span>
+                </div>
+            </div>
+            
+            <div class="work-item">
+                <img src="socialmedia.jpg" alt="Social Media Templates">
+                <div class="work-item-content">
+                    <div class="impact-note">
+                        <strong>Still in use today</strong> - Templates continue as foundation for all SFC social media
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>October 2021 - June 2022</p>
+        </div>
+    </footer>
+</body>
+</html>
